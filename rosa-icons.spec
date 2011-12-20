@@ -1,6 +1,6 @@
 %define tarname	 rosa
 %define _name    rosa
-%define version	 1.0.10
+%define version	 1.0.11
 %define release  %mkrel 1
 
 Summary:	ROSA icons theme
