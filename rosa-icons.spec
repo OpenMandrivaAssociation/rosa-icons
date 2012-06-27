@@ -25,4 +25,5 @@ mkdir -p %{buildroot}%{_datadir}/icons/%{_name}
 cp -rf ./* %{buildroot}%{_datadir}/icons/%{_name}
 
 %files
+%dir %{_datadir}/icons/%{_name}
 %{_datadir}/icons/%{_name}/*
