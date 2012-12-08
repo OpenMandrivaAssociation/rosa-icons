@@ -1,2 +1,6 @@
+removed_sources:
+  rosa-1.0.29.4.tar.gz: 2594d62be2863cc29a2c327a44117e4d85360360
+  rosa-1.0.30.tar.xz: 7bc9f2f271225477d802856be1b7eee419d5a000
+  rosa-1.0.31.tar.xz: 01b17651464690cccb933753187e846fbd3546c8
 sources:
-  "rosa-1.0.27.tar.gz:"	70db3c49356ae106a59d547281b720dfada00307
+  rosa-1.0.33.tar.xz: 0ceaa057b5dbb732d717d5dfa68066a23f29755c
