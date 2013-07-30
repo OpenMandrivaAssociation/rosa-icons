@@ -1,13 +1,14 @@
 %define tarname	rosa
 %define _name	rosa
 %define version	1.0.33
-%define release	1
+%define release	2
 
 Summary:	ROSA icons theme
 Name:		%{_name}-icons
 Version:	%{version}
 Release:	%{release}
 Source0:	%{tarname}-%{version}.tar.xz
+Source1:	mdvbutton.svg
 URL:		www.rosalinux.com
 License:	GPLv2
 Group:		Graphical desktop/Other
@@ -43,6 +44,11 @@ for i in `ls`
 do
     echo "Converting $i to plain SVG."
     inkscape -l $i $i
+done
+
+# replace the rosa icon with open mandriva
+for i in 22 24 32 48 64 128; do
+        cp %{SOURCE1} %{buildroot}%{_iconsdir}/%{_name}/places/${i}/start-here.svg ;
 done
 
 %fdupes -s %{buildroot}%{_datadir}/icons/%{_name}
