@@ -3,4 +3,8 @@ removed_sources:
   rosa-1.0.30.tar.xz: 7bc9f2f271225477d802856be1b7eee419d5a000
   rosa-1.0.31.tar.xz: 01b17651464690cccb933753187e846fbd3546c8
 sources:
+  drakconf32.svg: 075845596575585df809ee7b5e3d38d30b5ee971
+  drakconf48.svg: 5966d26bb9fe8fd8202d90448cf393528f67b539
+  drakconf64.svg: b3cae6b571bcad1afea487f4e6ba8cb41d562514
+  mdvbutton.svg: 36eb7a63faa8349d3583871bd29d816803f5efc6
   rosa-1.0.33.tar.xz: 0ceaa057b5dbb732d717d5dfa68066a23f29755c
