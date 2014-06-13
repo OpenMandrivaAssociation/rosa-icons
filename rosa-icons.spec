@@ -1,7 +1,7 @@
 %define tarname	rosa
 %define _name	rosa
 %define version	1.0.33
-%define release	7
+%define release	8
 
 Summary:	ROSA icons theme
 Name:		%{_name}-icons
