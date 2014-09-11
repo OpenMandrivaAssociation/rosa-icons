@@ -1,0 +1,12 @@
+diff -urN rosa-icons-1.1.3/index.theme rosa-icons-1.1.3-patched/index.theme
+--- rosa-icons-1.1.3/index.theme	2013-11-19 20:18:53.000000000 +1100
++++ rosa-icons-1.1.3-patched/index.theme	2014-08-20 21:24:04.988119584 +1100
+@@ -1,7 +1,7 @@
+ [Icon Theme]
+ Name=ROSA Theme
+ Comment=Beautiful icon theme. Designed specially for the ROSA Desktop.
+-Inherits=gnome,ubuntu-mono-light,hicolor,gnome-colors-brave,HighContrast
++Inherits=hicolor
+ 
+ Example=directory-x-normal
+ 
