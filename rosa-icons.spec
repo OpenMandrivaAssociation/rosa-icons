@@ -1,20 +1,20 @@
-%define tarname	rosa-icons
-%define _name	rosa
-%define version	1.1.3
-%define release	1
+%define oname rosa
 
 Summary:	ROSA icons theme
-Name:		%{_name}-icons
-Version:	%{version}
-Release:	%{release}
-Source0:	%{tarname}-%{version}.tar.xz
+Name:		%{oname}-icons
+Version:	1.1.3
+Release:	2
+# https://abf.rosalinux.ru/uxteam/rosa-icons-devel
+Source0:	%{name}-%{version}.tar.xz
 Source1:	kdenlive-actions.tar.xz
 Source2:	gnome3-devices.tar.xz
 URL:		www.rosalinux.com
 License:	GPLv2
 Group:		Graphical desktop/Other
+Patch0:		rosa-icons-1.1.3-inherits.patch
 BuildArch:	noarch
-BuildRequires:	fdupes inkscape
+BuildRequires:	fdupes
+BuildRequires:	inkscape
 Requires:	gnome-icon-theme
 
 %description
@@ -24,17 +24,18 @@ Initially based on the original icon theme Elementary by Daniel Fore
 (Dan Rabbit).
 
 %prep
-%setup -q -n %{tarname}-%{version}
+%setup -q
+%patch0 -p1
 tar xJf %{SOURCE1}
 tar xJf %{SOURCE2}
 
 %install
-mkdir -p %{buildroot}%{_datadir}/icons/%{_name}
-cp -rf ./* %{buildroot}%{_datadir}/icons/%{_name}
+mkdir -p %{buildroot}%{_datadir}/icons/%{oname}
+cp -rf ./* %{buildroot}%{_datadir}/icons/%{oname}
 
 # An ugly hack to work with Ikscape.
 # TODO: Neccessary find a real problem!
-cd %{buildroot}%{_datadir}/icons/%{_name}/16x16/places
+cd %{buildroot}%{_datadir}/icons/%{oname}/16x16/places
 
 for i in `ls`
 do
@@ -42,14 +43,14 @@ do
     inkscape -l $i $i
 done
 # devices icons should be converted too
-cd %{buildroot}%{_datadir}/icons/%{_name}/16x16/devices
+cd %{buildroot}%{_datadir}/icons/%{oname}/16x16/devices
 for i in `ls`
 do
     echo "Converting $i to plain SVG."
     inkscape -l $i $i
 done
 
-%fdupes -s %{buildroot}%{_datadir}/icons/%{_name}
+%fdupes -s %{buildroot}%{_datadir}/icons/%{oname}
 
 %files
-%{_datadir}/icons/%{_name}/*
+%{_datadir}/icons/%{oname}/*
