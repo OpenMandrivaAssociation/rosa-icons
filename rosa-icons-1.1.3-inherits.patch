@@ -6,7 +6,7 @@ diff -urN rosa-icons-1.1.3/index.theme rosa-icons-1.1.3-patched/index.theme
  Name=ROSA Theme
  Comment=Beautiful icon theme. Designed specially for the ROSA Desktop.
 -Inherits=gnome,ubuntu-mono-light,hicolor,gnome-colors-brave,HighContrast
-+Inherits=hicolor
++Inherits=hicolor,gnome
  
  Example=directory-x-normal
  
