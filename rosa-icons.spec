@@ -2,16 +2,15 @@
 
 Summary:	ROSA icons theme
 Name:		%{oname}-icons
-Version:	1.1.3
-Release:	6
+Version:	1.1.21
+Release:	1
 # https://abf.rosalinux.ru/uxteam/rosa-icons-devel
-Source0:	%{name}-%{version}.tar.xz
+Source0:	%{name}-devel-v%{version}.tar.gz
 Source1:	kdenlive-actions.tar.xz
 Source2:	gnome3-devices.tar.xz
 URL:		www.rosalinux.com
 License:	GPLv2
 Group:		Graphical desktop/Other
-Patch0:		rosa-icons-1.1.3-inherits.patch
 BuildArch:	noarch
 BuildRequires:	fdupes
 BuildRequires:	inkscape
@@ -24,8 +23,7 @@ Initially based on the original icon theme Elementary by Daniel Fore
 (Dan Rabbit).
 
 %prep
-%setup -q
-%patch0 -p1
+%setup -q -n %{name}-devel-v%{version}
 tar xJf %{SOURCE1}
 tar xJf %{SOURCE2}
 

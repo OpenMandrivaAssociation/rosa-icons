@@ -1,4 +1,3 @@
-
 sources:
   drakconf32.svg: 075845596575585df809ee7b5e3d38d30b5ee971
   drakconf48.svg: 5966d26bb9fe8fd8202d90448cf393528f67b539
@@ -6,4 +5,4 @@ sources:
   mdvbutton.svg: 36eb7a63faa8349d3583871bd29d816803f5efc6
   gnome3-devices.tar.xz: 687ec797c1c5f830907a176414e0c31171dc5812
   kdenlive-actions.tar.xz: 905f131cd72e7ddd35acdde31877365e57923b2d
-  rosa-icons-1.1.3.tar.xz: b96c7ed0f4abe408e703625d2ca735a9a42f8ac8
+  rosa-icons-devel-v1.1.21.tar.gz: ecbc24d17efed5cfedd5d8987d79dfba240e2377
