@@ -11,7 +11,6 @@ Source2:	gnome3-devices.tar.xz
 URL:		www.rosalinux.com
 License:	GPLv2
 Group:		Graphical desktop/Other
-Patch0:		rosa-icons-1.1.3-inherits.patch
 BuildArch:	noarch
 BuildRequires:	fdupes
 BuildRequires:	inkscape
@@ -25,7 +24,6 @@ Initially based on the original icon theme Elementary by Daniel Fore
 
 %prep
 %setup -q -n %{name}-devel-v%{version}
-%patch0 -p1
 tar xJf %{SOURCE1}
 tar xJf %{SOURCE2}
 
