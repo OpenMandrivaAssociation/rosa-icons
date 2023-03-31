@@ -3,7 +3,7 @@
 Summary:	ROSA icons theme
 Name:		%{oname}-icons
 Version:	1.1.21
-Release:	1
+Release:	2
 # https://abf.rosalinux.ru/uxteam/rosa-icons-devel
 Source0:	%{name}-devel-v%{version}.tar.gz
 Source1:	kdenlive-actions.tar.xz
